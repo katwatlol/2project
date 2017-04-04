@@ -1,0 +1,279 @@
+/* =================================
+Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+} 
+
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.6;
+  color: #525252;
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+  font-size: .95em;
+  margin-bottom: 1.8em;
+  margin-top: 0px;
+  color: #7f7f7f;
+  padding: 0 3em;
+}
+h1,
+h2,
+h3,
+a {
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+nav {
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+/* =================================
+Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name > a {
+  margin: 0;
+  color: #CC99FF;
+}
+.wrapper {
+  border-top: 7px solid #CC99FF;
+  background: #fafafa;
+}
+.name a,
+.main-nav a,
+.footer-menu a {
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+}
+
+.nav a,
+.footer-menu a {
+  font-size: .95em;
+  color: #525252;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 5px 15px;
+  background-color: #fff;
+}
+.cards a{
+  font-size: 1.1em;
+  color: #525252;
+}
+.cards a:after {
+  content: attr(title);
+}
+.cards img{
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 1em;
+}
+.main-nav a:hover,
+.footer-menu a:hover {
+  color: #CC99FF;
+}
+i.fa {
+    color: #CC99FF;
+    padding-right: 10px;
+}
+/* ---- Layout Containers ---- */
+
+.main-header,
+.contact,
+.portfolio {
+  text-align: center;
+}
+.contact > span {
+  margin-bottom: 1.2em;
+}
+.main-header {
+  background: #fafafa;
+  padding-bottom: 3em;
+  padding-top: 3em;
+  margin-bottom: 50px;
+}
+.cards p, 
+.contact p {
+  padding: 0 2em;
+  text-align: center;
+}
+.main-footer {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #fafafa;
+}
+.name {
+  color: #CC99FF;
+  font-weight: bold;
+  align-self: center;
+}
+.footer-menu{
+  display: none;
+}
+.footer-menu a {
+  padding-right: 0px;
+  margin-right: 0px;
+}
+.name {
+  padding-left: 0px;
+  margin-left: 0px;
+}
+.footer-links{
+  display: flex;
+}
+/* ---- Page Elements ---- */
+
+.contact {
+  display: flex;
+  flex-flow: column;
+}
+.contact > span > a {
+  color: #000;
+  font-weight: bolder;
+  padding-left: 5px;
+}
+
+/* =================================
+Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+  .profile,
+  .main-footer,
+  .contact {
+    width: 90%;
+    margin: 0 auto;
+  }
+}	
+ .profile-picture {
+    order: 2;
+    height: 175px;
+    width: auto;
+  }	
+  .row,
+  .main-nav,
+  .profile,
+  .nav {
+    margin: 0 auto;
+    display: flex;
+  }
+	
+  .main-header p {
+    font-size: 1.1em;
+    text-align: left;
+    padding-right: 10px;
+    flex: 1 0 70%;  
+  }
+  .main-nav{
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-footer {
+    justify-content: space-between;
+  }
+  .nav a {
+    background-color: transparent;
+  }
+  .cards {
+    flex: 1 50%;
+  }
+  .row {
+    flex-wrap:wrap;
+    width: 90%;
+  }
+  .row h3, h2 {
+    flex: 100%;
+    margin: 2em;
+  }
+  .footer-menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main-header p {
+    font-size: 1.1em;
+    text-align: left;
+    padding-right: 10px;
+    flex: 1 0 70%;
+  }
+  .contact p {
+    padding: 0 8em;
+    font-size: 1.1em;
+    margin-top: 0;
+  }
+  .cards img {
+    padding-right: 0px;
+    padding-bottom: 1em;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .image {
+    flex: 1 0 40%;
+  }
+  .main-header p {
+    padding-left: 0;
+    max-width: 400px;
+  }
+
+@media (min-width: 1024px) {
+  .main-nav {
+	flex-direction: row;
+	justify-content: space-between;
+	}
+  .cards {
+    flex: 1 33%;
+  }
+  .main-nav,
+  .row,
+  .profile,
+  .main-footer,
+  .contact {
+	width: 80%;
+	max-width: 1150px;
+	}
+  .main-header p {
+    font-size: 1.5em;
+    padding-right: 4em;
+  }
+  ul.nav {
+    margin-right: 0px;
+  }
+  .nav a {
+    margin-right: 0px;
+  }
+  h1.name > a {
+    padding-left: 0px;
+  }
+  .profile-picture {
+    height: auto;
+  }
+  .contact p {
+    padding: 0px 9em;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+  }
+	
+  .main-header p {
+    max-width: 500px;	
+  }
+}
+
