@@ -1,85 +1,123 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Responsive Layout Designs</title>
-  <meta name="author" content="Katrina Lovett">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-</head>
-<body>
-  <div class="wrapper">
-    <nav class="main-nav">
-      <h1 class="name"><a href="index.html">Katrina Lovett</a></h1>
-      <ul class="nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-  <header id="header" class="main-header">
-    <div class="profile">
-      <img class="profile-picture col" alt="profile picture" src="images/responsive-layout-profile.png"/>
-      <p>Hi! Welcome to my page. My name is Katrina and I'm currently on Treehouse to learn on how to code and to become a Front-End web developer. My dream is to work and live in California as a Front-End web developer.</p>
-    </div>
-  </header>
-  <main id="portfolio" class="portfolio row">
-    <h3>Portfolio</h3>
-    <div class="cards">
-      <a href="#" title="Marketing">
-        <img alt="Marketing" src="images/portfolio-1.png" />
-      </a>
-      <p>This is what companies or businesses use to promote and sell their products.</p>
-    </div>
-    <div class="cards">
-      <a href="#" title="Search Page">
-        <img alt="Search" src="images/portfolio-2.png" />
-      </a>
-      <p>This is what someone will use to search specifically for that keyword they are looking for. </p>
-    </div>
-    <div class="cards">
-      <a href="#" title="Travel App">
-        <img alt="Travel" src="images/portfolio-3.png" />
-      </a>
-      <p>This app will make your travel a lot easier by helping you find hotels, tourism events, and flights.</p>
-    </div>
-    <div class="cards">
-      <a href="#" title="Map">
-        <img alt="Map of places" src="images/portfolio-4.png" />
-      </a>
-      <p>This was created to show you where you are at even if you are lost, or if you wanted to go somewhere without knowing the directions.</p>
-    </div>
-    <div class="cards">
-      <a href="#" title="Photos">
-        <img alt="Photos" src="images/portfolio-5.png" />
-      </a>
-      <p>This is where you will show all your photos and projects of what you have done. </p>
-    </div>
-    <div class="cards">
-      <a href="#" title="Calculator">
-        <img alt="Photos" src="images/portfolio-6.png" />
-      </a>
-      <p>This is where you will find answers to a simple math problem.</p>
-    </div>
-  </main>
-  <section  id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>Please contact me if you are interested! It would be my pleasure.</p>
-    <span>Phone <a href="tel:407-880-3423"> 407-880-3423</a></span>
-    <span>Email <a href="mailto:lovett_katrina@yahoo.com?Subject=Wannatalk?">lovett_katrina@yahoo.com</a></span>
-  </section>
-  <footer class="main-footer">
-    <span class="name">Katrina Lovett</span>
-    <div class="footer-menu">
-      <ul class="footer-links">
-        <li><a href="#header">Home</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </footer>
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Katrina Lovett</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+    <div class="wrapper">
+    <header class="clearfix top-header">
+       <h1 class="name">Katrina Lovett</h1>
+       <nav>
+         <ul class="top-nav">
+           <li><a href="#top">Home</a></li>
+           <li><a href="#portfolio">Portfolio</a></li>
+           <li><a href="#skills">Skills</a></li>
+           <li><a href="#contact">Contact</a></li>
+         </ul>
+       </nav>
+     </header>
+     <div class="intro clearfix">
+       <div class="intro-image">
+       <img src="images/responsive-layout-profile.png" alt="cartoon me">
+      </div>
+     <div class="paragraph-intro">
+       <p>Hi! Welcome to my page. My name is Katrina and I'm currently on Treehouse to learn on how to code and to become a Front-End web developer. My dream is to work and live in California as a Front-End web developer.</</p>
+     </div>
+   </div>
+    <div class="projects clearfix" id="portfolio">
+      <h2 class="portfolio">Portfolio</h2>
+      <ul class="projects clearfix">
+	  			<li>
+            <div class="project-image">
+	  				<img src="images/portfolio-1.png" alt="project image 1"/>
+	  				<div class="caption">
+		  				<h2>Marketing</h2>
+		  				<p>This is what companies or businesses use to promote and sell their products.</p>
+		  			</div>
+          </div>
+		  		</li>
+	  			<li>
+            <div class="project-image">
+  					<img src="images/portfolio-2.png" alt="project image 2"/>
+  					<div class="caption">
+	  					<h2>Search Page</h2>
+	  					<p>This is what someone will use to search specifically for that keyword they are looking for.</p>
+	  				</div>
+          </div>
+  				</li>
+  				<li>
+          <div class="project-image">
+					<img src="images/portfolio-3.png" alt="project image 3"/>
+					<div class="caption">
+	  					<h2>Travel App</h2>
+	  					<p>This app will make your travel a lot easier by helping you find hotels, tourism events, and flights.</p>
+	  				</div>
+          </div>
+  				</li>
+  				<li>
+          <div class="project-image">
+					<img src="images/portfolio-4.png" alt="project image 4"/>
+					<div class="caption">
+	  					<h2>Map of places</h2>
+	  					<p>This was created to show you where you are at even if you are lost, or if you wanted to go somewhere without knowing the directions.</p>
+	  				</div>
+          </div>
+  				</li>
+  				<li>
+          <div class="project-image">
+					<img src="images/portfolio-5.png" alt="project image 5"/>
+					<div class="caption">
+	  					<h2>Photos</h2>
+	  					<p>This is where you will show all your photos and projects of what you have done.</p>
+	  				</div>
+          </div>
+  				</li>
+  				<li>
+          <div class="project-image">
+					<img src="images/portfolio-6.png" alt="project image 6"/>
+					<div class="caption">
+	  					<h2>Calculator</h2>
+	  					<p>This is where you will find answers to a simple math problem.</p>
+	  				</div>
+          </div>
+  				</li>
+  			</ul>
+		</div>
+
+		<div class="skills" id="skills">
+			<h2>Skills</h2>
+			<ul>
+			<li>Adobe photoshop</li>
+			<li>Front End Development</li>
+			</ul>
+		</div>
+
+		<div class="contactinfo" id="contact">
+			<h2>Contact</h2>
+			<p> Please contact me if you are interested! It would be my pleasure.</p>
+		<span> <p>Phone: <a href="tel:407-880-3423"> 407-880-3423</a></span>
+		<span> <p>Email: <a href="mailto:lovett_katrina@yahoo.com?Subject=Wannatalk?">lovett_katrina@yahoo.com</a></span>
+		</div>
+
+
+  		<footer class="footer clearfix">
+        <p class="name">Katrina Lovett</p>
+		<a class="flywheel" href="#">Back To Top</a>
+        <nav>
+  			   <ul>
+            <li class="footernav"><a href="#">Home</a></li>
+            <li class="footernav"><a href="#portfolio">Portfolio</a></li>
+            <li class="footernav"><a href="#contact">Contact</a></li>
+            <li class="footernav"><a href="#skills">Skills</a></li>
+          </ul>
+        </nav>
+      </footer>
+
+  </body>
 </html>

@@ -39,11 +39,6 @@ a:hover {
   color: purple;
 }
 
-.wrapper {
-  border-top: 7px solid #ffffff;
-  background: #efe3e3;
-}
-
 ul li {
   list-style: none;
 }
